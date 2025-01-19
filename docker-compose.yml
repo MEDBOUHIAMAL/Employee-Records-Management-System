@@ -1,0 +1,14 @@
+services:
+  springboot-app:
+    build:
+      context: ./ERMS
+    ports:
+      - "8080:8080"
+
+  swing-app:
+    build:
+      context: ./EmployeeManagementUI
+    environment:
+      DISPLAY: ${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
