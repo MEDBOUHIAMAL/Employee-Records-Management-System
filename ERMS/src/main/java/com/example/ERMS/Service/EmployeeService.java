@@ -15,14 +15,11 @@ import java.util.Optional;
 @Service
 public class EmployeeService {
 
-    @Autowired
-    private EmployeeRepository employeeRepository;
-    @Autowired
+    private final EmployeeRepository employeeRepository;
     private final LoginRepository userRepository;
 
-
-
-    public EmployeeService(LoginRepository userRepository) {
+    public EmployeeService(EmployeeRepository employeeRepository, LoginRepository userRepository) {
+        this.employeeRepository = employeeRepository;
         this.userRepository = userRepository;
     }
 
