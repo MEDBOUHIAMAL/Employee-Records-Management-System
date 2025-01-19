@@ -39,7 +39,6 @@ Employee-Records-Management-System/
 ├── docker-compose.yml       # Docker configuration
 ├── Collection.postman_collection.json  # Postman API collection
 ├── README.md                # Documentation
-└── BACKLOG.md               # Task backlog and project progress
 
 ```
 
